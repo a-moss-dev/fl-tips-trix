@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 /* Hide default arrow */
 summary {
     list-style: none;
@@ -14,6 +16,11 @@ li {
     background: #ff9f5f;
 }
 
+h1, h2, h3 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 /* Custom Arrow using borders */
 .arrow {
     width: 8px;
