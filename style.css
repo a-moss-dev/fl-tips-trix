@@ -1,0 +1,35 @@
+/* Hide default arrow */
+summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+li {
+    background: #ff9f5f;
+}
+
+/* Custom Arrow using borders */
+.arrow {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(-45deg); /* Points right/down initially */
+    transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+/* Rotate arrow when open */
+details[open] .arrow {
+    transform: rotate(45deg); /* Rotates to point down/up */
+}
+
+.content {
+    padding: 10px;
+    background: #dadada;
+}
