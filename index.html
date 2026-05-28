@@ -2,7 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+
+        <!--label on browser tab-->
         <title>Essential UI Tips for FL Studio</title>
+
         <link rel="stylesheet" href="style.css" />
     </head>
 
@@ -14,7 +17,8 @@
         <!--classes for style and IDs for potential nav element-->
         <main>
             <div class="top-main">
-                <img src=images/FL_img_2.png>
+                <!--Hero image-->
+                <img src=images/FL_img_2.png alt="An image showing the complex user-interface of FL Studio">
             </div>
 
             <div class="pg-intro" id="#intro">
@@ -41,7 +45,10 @@
                             </summary>
 
                             <div class="content">
-                                <p>Before you connect your sample packs to FL Studio, it is a good idea to organize them in helpfully labled folders.</p>
+                                <p>Before you connect your sample packs to FL Studio, it is a good idea to organize them in helpfully labled folders. This can be extremely useful especially if you have a variety of sample packs for different genres. Also, using one primary folder to hold all the genre folders and subsequently the sample packs, makes linking the folder to FL Studio much more simple and straightforward</p>
+
+                                <span>this is how my sample packs are organized</span>
+                                <img src
                             </div>
 
                         </details>
@@ -60,11 +67,11 @@
 
                     <p>To access the envelopes panel for a sample, click on the sample in the channel rack and click on the second tab, the one with two lines (a straight line and a curved line) in a triangle-like shape. After navigating to the tab, click "volume" (if it isn't already selected) in the navigation bar containing panning, Mod X, Pitch, etc. Click the circular button to the left of the "Envelope" label to activate the envelope for your sample.</p>
 
-                    <img src="images/toggle.png" class="imgname-toggle">
+                    <img src="images/toggle.png" class="imgname-toggle" alt="Locating and turning on a sample's volume envelope in FL Studio">
 
                     <p>Now that you have activated the envelope, you should play the sample a few times to hear what changes have been made to familiarize yourself with its modifications. The main difference you should notice, is the sound ends sooner after you stop triggering it. Now, you have to hold the note down for it to keep playing. The last step is to adjust the envelope levels so the sample sounds how you want it to sound. Delay determines how soon the envelope affects the sound after the sample starts playing, attack changes how long it takes for the sound to reach its set volume, hold keeps the volume steady for a set time, decay determines how long it takes for the volume to reach the sustain level, sustain is the volume level that decay fades to, and release sets how long the sound keeps playing after a key (like piano key) is released. For the majority of my samples, I set the attack to a tiny sliver to prevent a potential popping sound, hold doesn't really matter for my purposes and neither does decay, but I turn the sustain all the way up, and I set the release differently depending on the sample.</p>
 
-                    <img src="images/adjust.png" class="imgname-adjust">
+                    <img src="images/adjust.png" class="imgname-adjust" alt="Adjusting a sample's volume envelope in FL Studio">
 
                 </div>
 
@@ -76,7 +83,7 @@
 
                     <p>open the sample by clicking on it in the channel rack, and then click on either the two-line triangle or the wrench (both of these tabs have the item you will use). at the bottom of either tab, you should see a regular keyboard that has a single note colored blue. The blue note is what FL Studio thinks is the "root" note of your samples. If you set the blue note to the correct pitch of your sample, pressing the note that normally plays "C" on a piano will play your sample at the pitch of C. To correct your sample's preset root note, simply right-click on the correct keyboard note. Please keep in mind, the default root is C5, not C4 or C3 or anything else. You should set your root note within that range to keep octaves consistent. Additionally, if your root note is not set to the note of your sample, the keyboard in the piano roll or any other method you can use to play your sample, will be very weird and the notes will not match with your other instruments. That is why fixing the root note is extremely important</p>
 
-                    <img src="images/root.png">
+                    <img src="images/root.png" alt="FL Studio sampler's virtual keyboard being used to set a sample's root note">
 
                 </div>
 
@@ -93,7 +100,16 @@
 
                     <p>The mixer plays a huge role in music production, as it controls all the levels (volume for example) for every sound involved in your songs. In order to adjust every sound, you need to route every sound to the mixer first. Luckily, this is simple.</p>
 
-                    <p>In a sample's window or in the window for an instrument, towards the top there should be a rectangular box with either a number or three dashes (---). To send the element's sound to a mixer channel, simply click and drag on the box until the number reads what you want it to.</p>
+                    <p>In a sample's window or in the window for an instrument, towards the top there should be a rectangular box with either a number or three dashes (---). Keep in mind, this box is accessed differently on different window types. The box is particularly hidden in instrument windows, where you have to click the gear in the top left for it to even appear. Now, to send the element's sound to a mixer channel, simply click and drag on the box until the number reads what you want it to. Once you have set the element to a mixer channel, the mixer insert with that same number will be able to adjust the sound as desired.</p>
+
+                    <span>Channel selection using the sampler</span>
+                    <img src="images/samp.png" alt="A sampler window annotated to highlight the channel routing setting">
+
+                    <span>Channel selection using the channel rack</span>
+                    <img src="images/c-rack.png" alt="The FL Studio channel rack annotated to highlight channel routing settings">
+
+                    <span>Channel selection using an instrument (plugin)</span>
+                    <img src="images/syn.png" alt="The FL Studio plugin 'sytrus', annotated to show the channel routing setting">
                 </div>
 
             </div>
