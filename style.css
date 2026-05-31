@@ -7,13 +7,14 @@ summary {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 10px;
+    padding: 0.625rem;
 }
 summary::-webkit-details-marker {
     display: none;
 }
-li {
-    background: #ff9f5f;
+
+.tips {
+    background: #a9a9a9;
 }
 
 h1, h2, h3 {
@@ -23,10 +24,10 @@ h1, h2, h3 {
 }
 /* Custom Arrow using borders */
 .arrow {
-    width: 8px;
-    height: 8px;
-    border-right: 2px solid #333;
-    border-bottom: 2px solid #333;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-right: 0.125rem solid #333;
+    border-bottom: 0.125rem solid #333;
     transform: rotate(-45deg); /* Points right/down initially */
     transition: transform 0.3s ease; /* Smooth rotation */
 }
@@ -36,7 +37,18 @@ details[open] .arrow {
     transform: rotate(45deg); /* Rotates to point down/up */
 }
 
-.content {
+li {
+    background: #acacac;
+}
+
+.contents {
+    background: #d2d2d2;
+}
+.tip {
     padding: 10px;
-    background: #dadada;
+    background: #fe9733;
+}
+
+img {
+    width: 75%
 }
